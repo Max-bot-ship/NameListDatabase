@@ -4,8 +4,7 @@ const viteEnv = typeof import.meta !== 'undefined' ? import.meta.env ?? {} : {}
 const nodeEnv = typeof process !== 'undefined' ? process.env ?? {} : {}
 
 const supabaseUrl = viteEnv.VITE_SUPABASE_URL ?? nodeEnv.VITE_SUPABASE_URL
-const supabaseAnonKey =
-  viteEnv.VITE_SUPABASE_ANON_KEY ?? nodeEnv.VITE_SUPABASE_ANON_KEY
+const supabaseAnonKey = viteEnv.VITE_SUPABASE_ANON_KEY ?? nodeEnv.VITE_SUPABASE_ANON_KEY
 
 const configErrorMessage =
   'Missing Supabase config. Set VITE_SUPABASE_URL and VITE_SUPABASE_ANON_KEY in your .env file.'
